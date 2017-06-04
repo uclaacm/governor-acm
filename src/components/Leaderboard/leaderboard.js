@@ -11,9 +11,9 @@ export default class Leaderboard extends React.Component {
             return (
                 <div className="leaderboard-wrapper">
                     <div className="top-users">
-                        <TopUser user={ this.props.leaderboard[1] } place={ 2 } />
-                        <TopUser user={ this.props.leaderboard[0] } place={ 1 } />
-                        <TopUser user={ this.props.leaderboard[2] } place={ 3 } />
+                        {this.props.leaderboard[1] ? <TopUser user={ this.props.leaderboard[1] } place={ 2 } /> : null}
+                        {this.props.leaderboard[0] ? <TopUser user={ this.props.leaderboard[0] } place={ 1 } /> : null}
+                        {this.props.leaderboard[2] ? <TopUser user={ this.props.leaderboard[2] } place={ 3 } /> : null}
                     </div>
                     <table className="leaderboard-table">
                         <thead><tr>
@@ -29,7 +29,7 @@ export default class Leaderboard extends React.Component {
                         </tr></thead>
                         <tbody>
                         {
-                            this.props.leaderboard.map((p,i) => { i > 2 && 
+                            this.props.leaderboard.map((p,i) => { i > 2 &&
                                 <tr className={p === 15 ? "current-user" : ""} key={i}>
                                     <td>{20-p+1}</td>
                                     <td className="name">
