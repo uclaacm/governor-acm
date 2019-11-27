@@ -68,7 +68,7 @@ const mapStateToProps = (state) => {
 
   return {
     profile,
-    activity: state.User.get('activity'),
+    activity: state.User.get('activity'), 
     fetchSuccess: state.User.get('fetchSuccess'),
     updated: state.User.get('updated'),
     updateSuccess: state.User.get('updateSuccess'),

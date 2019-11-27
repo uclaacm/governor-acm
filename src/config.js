@@ -77,10 +77,10 @@ export default {
         picture: '/assets/images/officers/JustinLi.jpg',
       },
       {
-        name: 'Aaron Yoo',
+        name: 'Sanjana Sarda',
         position: 'President of Cyber',
-        email: 'atyoo99@gmail.com',
-        picture: '/assets/images/officers/AaronYoo.jpg',
+        email: 'sanjanas.sardas@gmail.com',
+        picture: '/assets/images/officers/SanjanaSarda.jpg',
       },
       {
         name: 'Kevin Chuang',
